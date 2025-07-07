@@ -1,4 +1,4 @@
-# HDL Scribbles
+# RTL Randoms
 
 I code when I feel like it — and when I do, it usually ends up here.
 
