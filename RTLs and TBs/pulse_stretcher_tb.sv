@@ -33,7 +33,7 @@ module tb;
     $finish;
   end
 
-  // VCD dump for EPWave
+  // VCD dump for EPWave in EDA Playground
   initial begin
     $dumpfile("dump.vcd");
     $dumpvars(0, tb);
