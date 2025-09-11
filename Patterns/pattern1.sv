@@ -2,10 +2,10 @@ class pattern;
   rand int a[];
   constraint a_size{a.size == 10;}
   constraint pattern_gen{foreach(a[i])
-    if(i % 2 == 0)
-      a[i] == 0;
-    else
-      a[i] == (i/2 + 1);}
+                          if(i % 2 == 0)
+                            a[i] == 0;
+                          else
+                            a[i] == (i/2 + 1);}
 endclass
 
 pattern p;
