@@ -5,7 +5,7 @@ class pattern_gen;
   function void post_randomize();
     for(int i = 0; i <= 10; i++) begin
       for(int j = 0; j <= i; j++) begin
-        $write("%0d", i);
+        $write("%0d", i + 1);
       end
       $write("\t");
     end
