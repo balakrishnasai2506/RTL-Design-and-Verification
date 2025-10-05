@@ -15,3 +15,7 @@ module test;
     $display("%p", b1.a);
   end
 endmodule
+
+/* Output:
+# KERNEL: '{29, 27, 20, 21, 7, 12}
+*/
