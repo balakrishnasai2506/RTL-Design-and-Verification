@@ -2,7 +2,7 @@
 class base;
   rand int x;
   constraint values{x inside {[1:10]};}
-  constraint val_dist{x dist {2 := 3, 4 := 3, 1 := 1, 3 := 1, [5:10] := 1};}
+  constraint val_dist{x dist {2 := 3, 4 := 3, 1 :/ 1, 3 :/ 1, [5:10] :/ 1};}
 endclass
 
 base b1;
@@ -19,23 +19,23 @@ endmodule
 
 /* OUTPUT:
 # KERNEL: 2
+# KERNEL: 4
+# KERNEL: 4
+# KERNEL: 2
+# KERNEL: 7
+# KERNEL: 4
+# KERNEL: 4
+# KERNEL: 2
 # KERNEL: 5
-# KERNEL: 2
-# KERNEL: 2
-# KERNEL: 3
-# KERNEL: 8
-# KERNEL: 6
-# KERNEL: 2
-# KERNEL: 2
-# KERNEL: 9
-# KERNEL: 2
-# KERNEL: 10
 # KERNEL: 4
 # KERNEL: 3
-# KERNEL: 4
-# KERNEL: 9
 # KERNEL: 1
+# KERNEL: 2
 # KERNEL: 4
-# KERNEL: 8
-# KERNEL: 8
+# KERNEL: 1
+# KERNEL: 2
+# KERNEL: 3
+# KERNEL: 4
+# KERNEL: 4
+# KERNEL: 2
 */
