@@ -22,3 +22,7 @@ module test;
     $display("%p",b1);
   end
 endmodule
+
+/* OUTPUT:
+# KERNEL: 1	23	456	78910	1112131415	'{num:16, rows:5}
+*/
